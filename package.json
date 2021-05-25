@@ -13,5 +13,8 @@
     "tslib": "^2.0.0",
     "typescript": "^4.0.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "lzma-native": "^8.0.1"
+  }
 }
