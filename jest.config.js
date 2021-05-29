@@ -1,10 +1,14 @@
 const config = {
-    "transform": {
-      "^.+\\.js$": "babel-jest"
-    },
-    "moduleFileExtensions": [
-      "js"
-    ]
-  }
+  "transform": {
+    "^.+\\.ts$": "ts-jest",
+    "^.+\\.js$": "babel-jest",
+  },
+  "moduleFileExtensions": [
+    "js",
+    "ts"
+  ],
+  "preset": 'ts-jest',
+  "testEnvironment": 'node',
+}
 
 export default config;
