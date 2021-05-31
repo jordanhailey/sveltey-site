@@ -27,6 +27,7 @@
   "type": "module",
   "dependencies": {
     "base64url": "^3.0.1",
+    "lzma": "^2.3.2",
     "lzma-native": "^8.0.1"
   }
 }

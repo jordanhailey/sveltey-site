@@ -11,6 +11,7 @@ specifiers:
   babel-jest: ^27.0.1
   base64url: ^3.0.1
   jest: ^27.0.1
+  lzma: ^2.3.2
   lzma-native: ^8.0.1
   svelte: ^3.34.0
   svelte-preprocess: ^4.0.0
@@ -20,13 +21,14 @@ specifiers:
 
 dependencies:
   base64url: 3.0.1
+  lzma: 2.3.2
   lzma-native: 8.0.1
 
 devDependencies:
   '@babel/core': 7.14.3
   '@babel/preset-env': 7.14.2_@babel+core@7.14.3
   '@babel/preset-typescript': 7.13.0_@babel+core@7.14.3
-  '@sveltejs/kit': 1.0.0-next.109_svelte@3.38.2
+  '@sveltejs/kit': 1.0.0-next.111_svelte@3.38.2
   '@types/jest': 26.0.23
   '@types/lzma-native': 4.0.0
   '@types/node': 15.6.1
@@ -1364,24 +1366,24 @@ packages:
       '@sinonjs/commons': 1.8.3
     dev: true
 
-  /@sveltejs/kit/1.0.0-next.109_svelte@3.38.2:
-    resolution: {integrity: sha512-72iHsgcZTj9WU2VMq/qzMdFidTrSlJ1+KE0Iiw43Gee8TkKi5tMOyeu/f8lWa4HzdHLFZ2CJdvmcL7w3F4SWjg==}
+  /@sveltejs/kit/1.0.0-next.111_svelte@3.38.2:
+    resolution: {integrity: sha512-w3irGw6nqK78YBzSi37MvH67EZJxoACUOnihp1nVOGOJjcHSKysjNeF8qB5/jK7It1TJwxYeu+KrK3mBAg7jqQ==}
     engines: {node: ^12.20 || ^14.13.1 || >= 16}
     hasBin: true
     peerDependencies:
       svelte: ^3.38.2
     dependencies:
-      '@sveltejs/vite-plugin-svelte': 1.0.0-next.10_svelte@3.38.2+vite@2.3.4
+      '@sveltejs/vite-plugin-svelte': 1.0.0-next.10_svelte@3.38.2+vite@2.3.3
       cheap-watch: 1.0.3
       sade: 1.7.4
       svelte: 3.38.2
-      vite: 2.3.4
+      vite: 2.3.3
     transitivePeerDependencies:
       - rollup
       - supports-color
     dev: true
 
-  /@sveltejs/vite-plugin-svelte/1.0.0-next.10_svelte@3.38.2+vite@2.3.4:
+  /@sveltejs/vite-plugin-svelte/1.0.0-next.10_svelte@3.38.2+vite@2.3.3:
     resolution: {integrity: sha512-ImvxbhPePm2hWNTKBSA3LHAYGwiEjHjvvgfPLXm4R87sfZ+BMXql9jBmDpzUC/URBLT4BB3Jxos/i523qkJBHg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -1397,7 +1399,7 @@ packages:
       source-map: 0.7.3
       svelte: 3.38.2
       svelte-hmr: 0.14.4_svelte@3.38.2
-      vite: 2.3.4
+      vite: 2.3.3
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -3014,6 +3016,11 @@ packages:
       readable-stream: 3.6.0
     dev: false
 
+  /lzma/2.3.2:
+    resolution: {integrity: sha1-N4OySFi5wOdHoN88vx+1/KqSxEE=}
+    hasBin: true
+    dev: false
+
   /make-dir/3.1.0:
     resolution: {integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==}
     engines: {node: '>=8'}
@@ -3387,8 +3394,8 @@ packages:
       glob: 7.1.7
     dev: true
 
-  /rollup/2.50.2:
-    resolution: {integrity: sha512-Ra5JkxSiZPZZFnvE68KWtlrLnZGg5LNaV1n1esq4ch69P7ReeoRVlrTuL/k+L/GJfcowA5An0BEhEq2Hfzwl6w==}
+  /rollup/2.50.4:
+    resolution: {integrity: sha512-mBQa9O6bdqur7a6R+TXcbdYgfO2arXlDG+rSrWfwAvsiumpJjD4OS23R9QuhItuz8ysWb8mZ91CFFDQUhJY+8Q==}
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
@@ -3799,15 +3806,15 @@ packages:
       source-map: 0.7.3
     dev: true
 
-  /vite/2.3.4:
-    resolution: {integrity: sha512-7orxrF65+Q5n/sMCnO91S8OS0gkPJ7g+y3bLlc7CPCXVswK8to1T8YycCk9SZh+AcIc0TuN6YajWTBFS5atMNA==}
+  /vite/2.3.3:
+    resolution: {integrity: sha512-eO1iwRbn3/BfkNVMNJDeANAFCZ5NobYOFPu7IqfY7DcI7I9nFGjJIZid0EViTmLDGwwSUPmRAq3cRBbO3+DsMA==}
     engines: {node: '>=12.0.0'}
     hasBin: true
     dependencies:
       esbuild: 0.11.23
       postcss: 8.3.0
       resolve: 1.20.0
-      rollup: 2.50.2
+      rollup: 2.50.4
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
